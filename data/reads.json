@@ -1,0 +1,49 @@
+[
+  {
+    "id": "R-1",
+    "meter": "E-1",
+    "time": "2027-02-01T00:00:00+08:00",
+    "kwh": 13000,
+    "quality": "confirmed"
+  },
+  {
+    "id": "R-B1",
+    "meter": "E-1",
+    "time": "2027-02-02T00:00:00+08:00",
+    "kwh": 13150,
+    "quality": "confirmed",
+    "revision": 1,
+    "change_id": "CH-14"
+  },
+  {
+    "id": "R-B2",
+    "meter": "E-1",
+    "time": "2027-02-02T00:00:00+08:00",
+    "kwh": 13163,
+    "quality": "confirmed",
+    "revision": 2,
+    "revises": "R-B1",
+    "change_id": "CH-14"
+  },
+  {
+    "id": "R-3",
+    "meter": "E-1",
+    "time": "2027-02-03T00:00:00+08:00",
+    "kwh": 13280,
+    "quality": "confirmed"
+  },
+  {
+    "id": "R-4",
+    "meter": "E-2",
+    "time": "2027-02-01T00:00:00+08:00",
+    "kwh": 10000,
+    "quality": "confirmed"
+  },
+  {
+    "id": "R-5",
+    "meter": "E-2",
+    "time": "2027-02-03T00:00:00+08:00",
+    "kwh": 10320,
+    "quality": "confirmed"
+  }
+]

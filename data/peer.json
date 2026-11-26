@@ -1,0 +1,96 @@
+[
+  {
+    "path": "/switches/CH-14",
+    "expect": {
+      "meter_ids": [
+        "E-1",
+        "E-2"
+      ],
+      "action": "apply"
+    },
+    "responses": [
+      {
+        "events": [
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-1",
+            "status": "accepted",
+            "at": "2027-02-01T14:00:00+08:00",
+            "revision": 1
+          },
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-2",
+            "status": "accepted",
+            "at": "2027-02-01T14:00:00+08:00",
+            "revision": 1
+          }
+        ]
+      },
+      {
+        "events": [
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-1",
+            "status": "applied",
+            "at": "2027-02-02T00:00:00+08:00",
+            "revision": 2,
+            "reading_id": "R-B1"
+          },
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-2",
+            "status": "declined",
+            "at": "2027-02-02T00:00:00+08:00",
+            "revision": 2
+          }
+        ]
+      },
+      {
+        "events": [
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-1",
+            "status": "accepted",
+            "at": "2027-02-01T14:00:00+08:00",
+            "revision": 1
+          }
+        ]
+      }
+    ],
+    "drop_first_reply": false
+  },
+  {
+    "path": "/switches/cancel-14",
+    "expect": {
+      "change_id": "CH-14",
+      "meter_ids": [
+        "E-1",
+        "E-2"
+      ],
+      "action": "withdraw"
+    },
+    "responses": [
+      {
+        "events": [
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-1",
+            "status": "declined",
+            "reason": "already-applied",
+            "at": "2027-02-02T00:01:00+08:00",
+            "revision": 3
+          },
+          {
+            "change_id": "CH-14",
+            "meter_id": "E-2",
+            "status": "withdrawn",
+            "at": "2027-02-02T00:01:00+08:00",
+            "revision": 3
+          }
+        ]
+      }
+    ],
+    "drop_first_reply": true
+  }
+]

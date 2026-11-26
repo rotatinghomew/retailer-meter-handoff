@@ -1,0 +1,29 @@
+[
+  {
+    "id": "CH-14",
+    "company": "桃源板材",
+    "out": "松江零售",
+    "incoming": "岚岭售电",
+    "group": "both",
+    "meter_ids": [
+      "E-1",
+      "E-2"
+    ],
+    "planned": "2027-02-02T00:00:00+08:00",
+    "bridge_terms": {
+      "owner": "松江零售",
+      "cents_per_kwh": 55
+    }
+  },
+  {
+    "id": "CH-15",
+    "company": "桃源板材",
+    "out": "松江零售",
+    "incoming": "江南电服",
+    "group": "separate",
+    "meter_ids": [
+      "E-2"
+    ],
+    "planned": "2027-02-04T00:00:00+08:00"
+  }
+]
